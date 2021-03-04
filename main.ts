@@ -1,5 +1,6 @@
 let strip = neopixel.create(DigitalPin.P1, 24, NeoPixelMode.RGB)
 basic.forever(function () {
+    strip.showColor(neopixel.colors(NeoPixelColors.Black))
     basic.pause(600)
     strip.showColor(neopixel.colors(NeoPixelColors.Yellow))
     basic.pause(600)
@@ -10,6 +11,7 @@ basic.forever(function () {
     strip.showColor(neopixel.colors(NeoPixelColors.Violet))
     basic.pause(400)
     strip.showColor(neopixel.colors(NeoPixelColors.Purple))
+    basic.pause(400)
     strip.showColor(neopixel.colors(NeoPixelColors.Orange))
     basic.pause(400)
     strip.showColor(neopixel.colors(NeoPixelColors.Red))
@@ -17,7 +19,7 @@ basic.forever(function () {
     for (let index = 0; index < 4; index++) {
         strip.showRainbow(1, 360)
         basic.pause(200)
-        strip.showColor(neopixel.colors(NeoPixelColors.White))
+        strip.showColor(neopixel.colors(NeoPixelColors.Black))
         basic.pause(200)
     }
     strip.showColor(neopixel.colors(NeoPixelColors.Yellow))
@@ -28,4 +30,24 @@ basic.forever(function () {
         strip.showColor(neopixel.colors(NeoPixelColors.White))
         basic.pause(200)
     }
+    strip.showColor(neopixel.colors(NeoPixelColors.Orange))
+    basic.pause(500)
+    strip.showColor(neopixel.colors(NeoPixelColors.Yellow))
+    basic.pause(500)
+    strip.showColor(neopixel.colors(NeoPixelColors.Red))
+    basic.pause(500)
+    strip.showColor(neopixel.colors(NeoPixelColors.Violet))
+    basic.pause(1000)
+    strip.showColor(neopixel.colors(NeoPixelColors.Black))
+    basic.pause(3600)
+    for (let index = 0; index < 12; index++) {
+        strip.showColor(neopixel.colors(NeoPixelColors.Blue))
+        basic.pause(200)
+        strip.showColor(neopixel.colors(NeoPixelColors.Indigo))
+        basic.pause(200)
+    }
+    strip.showColor(neopixel.colors(NeoPixelColors.White))
+    basic.pause(1000)
+    strip.showColor(neopixel.colors(NeoPixelColors.Orange))
+    basic.pause(500)
 })
